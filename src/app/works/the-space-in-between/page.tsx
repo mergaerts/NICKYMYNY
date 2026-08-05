@@ -25,11 +25,7 @@ export default function SpaceInBetweenPage() {
           { name: "The Space In-Between", path: "/works/the-space-in-between" },
         ])}
       />
-      <CollectionIntro
-        title="The Space in Between"
-        intro="Paintings that hold the threshold — the atmosphere of transition, of moving between places, chapters, and states of belonging."
-        externalUrl={externalUrl}
-      />
+      <CollectionIntro title="The Space in Between" externalUrl={externalUrl} />
       <ArtworkArchiveEmbed
         embedId="aa_embed_the-space-in-between"
         scriptSrc="https://www.artworkarchive.com/profile/nicky-myny/collection/the-space-in-between/embed_js.js"

@@ -35,6 +35,13 @@ export const siteMeta = {
     "Nicky Myny is a contemporary painter working between Belgium and South Africa.",
   contactEmail: "artist@nickymyny.com",
 };
+
+export const socialLinks = [
+  { label: "Instagram", href: "https://www.instagram.com/nickymyny" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/nickymyny/" },
+  { label: "Facebook", href: "https://www.facebook.com/nicky.myny" },
+] as const;
+
 export const collaborationProjects: CollaborationProject[] = [
   {
     slug: "zerocrete",
@@ -170,9 +177,6 @@ export interface OpenStudioDate {
 }
 
 export const openStudioDates: OpenStudioDate[] = [
-  { date: "Thursday 23 July", hours: "18:30–21:00", note: "By RSVP" },
-  { date: "Friday 24 July", hours: "13:00–19:00", note: "Open" },
-  { date: "Saturday 25 July", hours: "13:00–17:00", note: "Open" },
   { date: "Thursday 27 August", hours: "18:30–21:00", note: "By RSVP" },
   { date: "Friday 28 August", hours: "13:00–19:00", note: "Open" },
   { date: "Saturday 29 August", hours: "13:00–17:00", note: "Open" },

@@ -25,11 +25,7 @@ export default function WhereWeStandPage() {
           { name: "Where We Stand", path: "/works/where-we-stand" },
         ])}
       />
-      <CollectionIntro
-        title="Where We Stand"
-        intro="A body of work reflecting on rootedness and passage — paintings that hold ground between two landscapes and two homes."
-        externalUrl={externalUrl}
-      />
+      <CollectionIntro title="Where We Stand" externalUrl={externalUrl} />
       <ArtworkArchiveEmbed
         embedId="aa_embed_where-we-stand"
         scriptSrc="https://www.artworkarchive.com/profile/nicky-myny/collection/where-we-stand/embed_js.js"

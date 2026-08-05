@@ -25,11 +25,7 @@ export default function RootingInRemembrancePage() {
           { name: "Rooting in Remembrance", path: "/works/Rootinginremembrance" },
         ])}
       />
-      <CollectionIntro
-        title="Rooting in Remembrance"
-        intro="Paintings that hold memory and lineage — a slow return to what came before, translated through layered pigment and gesture."
-        externalUrl={externalUrl}
-      />
+      <CollectionIntro title="Rooting in Remembrance" externalUrl={externalUrl} />
       <ArtworkArchiveEmbed
         embedId="aa_embed_rooting-in-remembrance"
         scriptSrc="https://www.artworkarchive.com/profile/nicky-myny/collection/rooting-in-remembrance/embed_js.js"

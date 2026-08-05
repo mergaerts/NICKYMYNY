@@ -25,11 +25,7 @@ export default function EarthSistersPage() {
           { name: "Earth Sisters", path: "/works/earth-sisters" },
         ])}
       />
-      <CollectionIntro
-        title="Earth Sisters"
-        intro="A collection devoted to feminine presence — figures held in warm pigment, standing between portrait and atmosphere. Painting as a slow language for memory, inheritance, and relation."
-        externalUrl={externalUrl}
-      />
+      <CollectionIntro title="Earth Sisters" externalUrl={externalUrl} />
       <ArtworkArchiveEmbed
         embedId="aa_embed_earth-sisters-2024"
         scriptSrc="https://www.artworkarchive.com/profile/nicky-myny/collection/earth-sisters-2024/embed_js.js"

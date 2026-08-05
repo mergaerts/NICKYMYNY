@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { Mail, Menu } from "lucide-react";
 import { useState, type ReactNode } from "react";
 
-import { siteMeta } from "@/lib/site-data";
+import { siteMeta, socialLinks } from "@/lib/site-data";
 
 const footerNav = [
   { to: "/works", label: "Works" },
@@ -149,9 +149,17 @@ export function SiteShell({ children }: { children: ReactNode }) {
               <div className="flex flex-wrap gap-x-4 gap-y-2 text-panel-foreground">
                 <Link href="/inquire">Contact</Link>
                 <Link href="/inquire#newsletter">Newsletter</Link>
-                <a href="https://www.instagram.com/nickymyny" target="_blank" rel="noreferrer" className="transition-colors hover:text-primary">
-                  Instagram
-                </a>
+                {socialLinks.map((link) => (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="transition-colors hover:text-primary"
+                  >
+                    {link.label}
+                  </a>
+                ))}
                 <Link href="/privacy" className="transition-colors hover:text-primary">
                   Privacy / Terms
                 </Link>

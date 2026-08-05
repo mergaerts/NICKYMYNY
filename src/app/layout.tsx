@@ -67,6 +67,8 @@ const personJsonLd = {
       ],
       sameAs: [
         "https://www.instagram.com/nickymyny",
+        "https://www.linkedin.com/in/nickymyny/",
+        "https://www.facebook.com/nicky.myny",
         "https://www.artworkarchive.com/profile/nicky-myny",
         "https://artkom.be",
       ],

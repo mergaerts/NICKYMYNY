@@ -3,6 +3,7 @@ import { InquiryForm, MinimalPageIntro, NewsletterPanel } from "@/components/art
 import { pageMetadata } from "@/lib/seo";
 import { breadcrumbJsonLd } from "@/lib/breadcrumbs";
 import { JsonLd } from "@/lib/json-ld";
+import { socialLinks } from "@/lib/site-data";
 
 export const metadata = pageMetadata({
   title: "Inquire | Nicky Myny",
@@ -45,9 +46,20 @@ export default function InquirePage() {
               <p className="mt-2">
                 <a href="mailto:artist@nickymyny.com" className="underline underline-offset-4 hover:text-primary">artist@nickymyny.com</a>
               </p>
-              <p className="mt-1">
-                <a href="https://www.instagram.com/nickymyny" target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-primary">Instagram — @nickymyny</a>
-              </p>
+              <ul className="mt-3 space-y-1">
+                {socialLinks.map((link) => (
+                  <li key={link.href}>
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="underline underline-offset-4 hover:text-primary"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
           <img src={contactStudioImage.url} alt="Artist sketching in a notebook at a wooden studio table surrounded by paintings and brushes" className="mt-8 aspect-[3/4] w-full object-cover" loading="lazy" width={1122} height={1402} />

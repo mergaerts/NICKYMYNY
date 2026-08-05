@@ -233,11 +233,9 @@ export function TestimonialQuote({
 
 export function CollectionIntro({
   title,
-  intro,
   externalUrl,
 }: {
   title: string;
-  intro: string;
   externalUrl?: string;
 }) {
   return (
@@ -246,7 +244,6 @@ export function CollectionIntro({
       <h1 className="mt-3 font-display text-[2.25rem] leading-[1.05] text-foreground md:text-[2.75rem]">
         {title}
       </h1>
-      <p className="mt-5 text-base leading-8 text-muted-foreground">{intro}</p>
       {externalUrl ? (
         <p className="mt-4 text-sm leading-7 text-muted-foreground">
           Prefer to browse elsewhere?{" "}

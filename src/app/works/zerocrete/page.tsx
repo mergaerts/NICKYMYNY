@@ -27,11 +27,7 @@ export default function ZerocretePage() {
           { name: "Zerocrete", path: "/works/zerocrete" },
         ])}
       />
-      <CollectionIntro
-        title="Zerocrete"
-        intro="A material-based collaboration with Johan Coetsee, where painting entered dialogue with Zerocrete as surface, texture, and structure."
-        externalUrl={externalUrl}
-      />
+      <CollectionIntro title="Zerocrete" externalUrl={externalUrl} />
       <ArtworkArchiveEmbed
         embedId="aa_embed_zerocrete"
         scriptSrc="https://www.artworkarchive.com/profile/nicky-myny/collection/zerocrete/embed_js.js"
