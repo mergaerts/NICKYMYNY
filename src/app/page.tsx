@@ -8,7 +8,6 @@ import {
   artworkPortraitTwo,
   collaborationLandscapeImage,
   heroImage,
-  openStudioDates,
   studioTableImage,
 } from "@/lib/site-data";
 import homeHero from "@/assets/home_header_now.png.asset.json";
@@ -63,6 +62,26 @@ export default function Index() {
               width={1920}
               height={1080}
             />
+          </div>
+        </div>
+      </section>
+
+      {/* EXHIBITIONS */}
+      <section className="border-b border-border/70">
+        <div className="mx-auto max-w-[1600px] px-5 py-12 md:px-10 md:py-16 lg:px-16">
+          <p className="eyebrow">Exhibitions</p>
+          <div className="mt-8 grid gap-x-8 gap-y-8 border-t border-border/70 pt-8 sm:grid-cols-2">
+            {[
+              { type: "Group Exhibition", venue: "Solo Studios", place: "Riebeek Valley, South Africa", date: "23–25 October 2026" },
+              { type: "Solo Exhibition", venue: "Gallery88", place: "Paarl, South Africa", date: "Opening on 12 November 2026" },
+            ].map((e) => (
+              <div key={e.venue}>
+                <p className="text-[0.7rem] uppercase tracking-[0.22em] text-primary">{e.type}</p>
+                <p className="mt-2 font-display text-xl text-foreground">{e.venue}</p>
+                <p className="mt-1 text-sm leading-7 text-muted-foreground">{e.place}</p>
+                <p className="mt-1 text-sm leading-7 text-foreground">{e.date}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -219,14 +238,9 @@ export default function Index() {
             <p className="mt-6 text-base leading-8 text-muted-foreground">
               Visitors are invited into the studio to encounter new paintings, works in progress, materials, sketches and the atmosphere of an active painting practice.
             </p>
-            <div className="mt-10 grid gap-x-8 gap-y-6 border-t border-border/70 pt-8 sm:grid-cols-2">
-              {openStudioDates.map((d) => (
-                <div key={d.date}>
-                  <p className="font-display text-lg text-foreground">{d.date}</p>
-                  <p className="mt-1 text-sm leading-7 text-muted-foreground">{d.hours}</p>
-                  <p className="mt-1 text-[0.7rem] uppercase tracking-[0.22em] text-primary">{d.note}</p>
-                </div>
-              ))}
+            <div className="mt-10 border-t border-border/70 pt-8">
+              <p className="font-display text-lg text-foreground">May 1–2 2027</p>
+              <p className="mt-1 text-[0.7rem] uppercase tracking-[0.22em] text-primary">Open</p>
             </div>
             <div className="mt-10">
               <Link href="/studio" className={btn("hero")}>
