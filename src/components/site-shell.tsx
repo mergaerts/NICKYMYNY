@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { Mail, Menu } from "lucide-react";
 import { useState, type ReactNode } from "react";
 
+import { BackToTop } from "@/components/back-to-top";
 import { siteMeta, socialLinks } from "@/lib/site-data";
 
 const footerNav = [
@@ -44,7 +45,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
         Skip to content
       </a>
       <header className="sticky top-0 z-40 border-b border-border/70 bg-background/92 backdrop-blur-md">
-        <div className="mx-auto flex w-full max-w-[1600px] items-center justify-between gap-6 px-5 py-4 md:px-8 lg:px-12">
+        <div className="mx-auto flex w-full max-w-[1920px] items-center justify-between gap-6 px-5 py-4 md:px-8 lg:px-12">
           <Link href="/" className="min-w-0">
             <div className="font-display text-[1.55rem] uppercase tracking-[0.24em] text-foreground sm:text-[1.75rem]">
               {siteMeta.name}
@@ -74,7 +75,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
           <div className="flex items-center gap-3">
             <Link
               href="/inquire"
-              className="hidden h-8 items-center justify-center rounded-sm border border-input bg-background px-3 text-xs shadow-sm hover:bg-accent hover:text-accent-foreground lg:inline-flex"
+              className="interactive hidden h-8 items-center justify-center rounded-sm border border-input bg-background px-3 text-xs shadow-sm hover:border-foreground/25 hover:bg-accent hover:text-accent-foreground lg:inline-flex"
             >
               Inquire
             </Link>
@@ -83,7 +84,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
               aria-label="Toggle navigation"
               aria-expanded={menuOpen}
               onClick={() => setMenuOpen((open) => !open)}
-              className="inline-flex h-10 w-10 items-center justify-center rounded-sm border border-border bg-background text-foreground lg:hidden"
+              className="interactive inline-flex h-10 w-10 items-center justify-center rounded-sm border border-border bg-background text-foreground hover:bg-accent lg:hidden"
             >
               <Menu className="h-4 w-4" />
             </button>
@@ -92,7 +93,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
 
         {menuOpen ? (
           <div className="border-t border-border/70 bg-background lg:hidden">
-            <nav className="mx-auto grid max-w-[1600px] gap-1 px-5 py-4 md:px-8" aria-label="Mobile navigation">
+            <nav className="mx-auto grid max-w-[1920px] gap-1 px-5 py-4 md:px-8" aria-label="Mobile navigation">
               {primaryNav.map((item) => (
                 <Link
                   key={item.label}
@@ -114,8 +115,10 @@ export function SiteShell({ children }: { children: ReactNode }) {
         {children}
       </main>
 
+      <BackToTop />
+
       <footer className="border-t border-border/70 bg-panel text-panel-foreground">
-        <div className="mx-auto grid max-w-[1600px] gap-12 px-5 py-12 md:px-8 lg:grid-cols-[1.2fr_1fr_1fr] lg:px-12 lg:py-16">
+        <div className="mx-auto grid max-w-[1920px] gap-12 px-5 py-12 md:px-8 lg:grid-cols-[1.2fr_1fr_1fr] lg:px-12 lg:py-16">
           <div>
             <p className="font-display text-3xl text-panel-foreground">{siteMeta.name}</p>
             <p className="mt-3 max-w-md text-sm leading-7 text-panel-muted">

@@ -2,15 +2,18 @@
 // No variant-merging edge cases needed here — every call site passes a fixed
 // variant/size pair, so plain string concatenation is enough.
 const base =
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-sm text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0";
+  "inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-sm text-sm font-medium transition-[color,background-color,border-color,transform,box-shadow,opacity] duration-300 ease-out focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring active:scale-[0.97] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0";
 
 const variants = {
-  default: "bg-primary text-primary-foreground shadow hover:bg-primary/90",
+  default:
+    "border border-primary bg-primary text-primary-foreground shadow-sm hover:-translate-y-px hover:bg-primary-strong hover:shadow-md",
   outline:
-    "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
-  hero: "border border-primary bg-primary text-primary-foreground hover:bg-primary-strong",
-  panelPrimary: "border border-primary bg-primary text-primary-foreground hover:bg-primary-strong",
-  panelOutline: "border border-panel-border bg-transparent text-panel-foreground hover:bg-panel-subtle",
+    "border border-input bg-background shadow-sm hover:border-foreground/25 hover:bg-accent hover:text-accent-foreground",
+  hero: "border border-primary bg-primary text-primary-foreground shadow-sm hover:-translate-y-px hover:border-primary-strong hover:bg-primary-strong hover:shadow-md",
+  panelPrimary:
+    "border border-primary bg-primary text-primary-foreground shadow-sm hover:-translate-y-px hover:border-primary-strong hover:bg-primary-strong hover:shadow-md",
+  panelOutline:
+    "border border-panel-border bg-transparent text-panel-foreground hover:border-panel-foreground/40 hover:bg-panel-subtle",
 } as const;
 
 const sizes = {
