@@ -1,0 +1,721 @@
+[
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/about-life-dialogue.jpg.asset.json",
+    "srcPath": "public/__l5e/assets-v1/017f2756-4182-41c6-b752-87c01a498ae5/about-life-dialogue.jpg",
+    "key": "about/about-life-dialogue.jpg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/about-nicky-v2.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/b609c55b-7363-4840-ba33-0df41ec8cff9/about-nicky-v2.png",
+    "key": "about/about-nicky-v-2.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/about-nicky.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/fb290b91-2056-493d-90ef-40283e21adad/about-nicky.png",
+    "key": "about/about-nicky.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/about-portrait.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/3a8bd129-e1fa-481e-be9b-61bab2877d66/about-portrait.png",
+    "key": "about/about-portrait.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/about-practice-process.jpeg.asset.json",
+    "srcPath": "public/__l5e/assets-v1/284faab5-48b4-4b97-8c9f-60f285e5e7d0/about-practice-process.jpeg",
+    "key": "about/about-practice-process.jpeg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/about-studio-landscape.jpeg.asset.json",
+    "srcPath": "public/__l5e/assets-v1/213e062b-ba10-43d3-8ed9-57054ec339f7/about-studio-landscape.jpeg",
+    "key": "studio/about-studio-landscape.jpeg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/about-studio-table.jpg.asset.json",
+    "srcPath": "public/__l5e/assets-v1/9d40cc7c-43c0-42ec-acd8-fa11b2a2fb6a/about-studio-table.jpg",
+    "key": "studio/about-studio-table.jpg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/about1.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/a096ccd9-07f1-4f09-b488-3b9e322a8be4/about1.png",
+    "key": "about/about-1.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/about2.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/4e23f2d5-8ab5-42eb-8495-d90d1d4e3f48/about2.png",
+    "key": "about/about-2.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/be-sa.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/4ca02fb3-01c4-4bd5-a16a-00613feb46c5/be-sa.png",
+    "key": "misc/be-sa.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/collaborations-header.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/afd6687a-cf1f-4260-9200-1e47af22b589/collaborations-header.png",
+    "key": "collaborations/collaborations-header.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/collaborations-hero.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/e235f295-342c-4a96-8355-300a12cad3fb/collaborations-hero.png",
+    "key": "collaborations/collaborations-hero.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/commission-examples-row.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/3e84fa6f-7aba-4f55-b8bf-ea5bc282cc09/commission-examples-row.png",
+    "key": "collaborations/commission-examples-row.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/commissions-hero.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/c548dad6-8776-4288-b79b-18a440acddce/commissions-hero.png",
+    "key": "collaborations/commissions-hero.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/contact-studio.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/a5f953db-6a3e-40e8-bec7-d7a7b6ae0468/contact-studio.png",
+    "key": "studio/contact-studio.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/daft-nina-nicky.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/bed27e26-4cc9-40cd-9c88-3c17d748fc56/daft-nina-nicky.png",
+    "key": "collaborations/daft-nina-nicky.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/earth-sisters-button.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/8516274b-b7dd-4387-bbdf-264b4be172bb/earth-sisters-button.png",
+    "key": "exhibitions/earth-sisters-button.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/earthsisters.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/7bcebf67-104e-4bd3-b194-e6b3bf5d9cd2/earthsisters.png",
+    "key": "misc/earthsisters.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/eosc-portrait.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/9dd78e6d-7493-4ccb-951c-6626a0c0c340/eosc-portrait.png",
+    "key": "collaborations/eosc-portrait.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/frame-example-1.jpg.asset.json",
+    "srcPath": "public/__l5e/assets-v1/2bf7c33f-9991-4363-918d-5fe9bf7402fa/frame-example-1.jpg",
+    "key": "collaborations/frame-example-1.jpg",
+    "contentType": "image/webp",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/frame-example-2.jpg.asset.json",
+    "srcPath": "public/__l5e/assets-v1/de82ec18-6239-4cea-9d49-b56c8faca353/frame-example-2.jpg",
+    "key": "collaborations/frame-example-2.jpg",
+    "contentType": "image/webp",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/frame-example-3.jpg.asset.json",
+    "srcPath": "public/__l5e/assets-v1/52c99add-91f2-43cd-a81e-e4b82217e71b/frame-example-3.jpg",
+    "key": "collaborations/frame-example-3.jpg",
+    "contentType": "image/webp",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/frame-example-4.jpg.asset.json",
+    "srcPath": "public/__l5e/assets-v1/7ba1be02-40ce-4d13-942a-2e19ba25179d/frame-example-4.jpg",
+    "key": "collaborations/frame-example-4.jpg",
+    "contentType": "image/webp",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/frame-experience.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/05632192-74a2-4055-a3fb-7867fa84e40f/frame-experience.png",
+    "key": "collaborations/frame-experience.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/frame-hero.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/0fcc74af-81ee-4164-9452-7d4c66fa2acd/frame-hero.png",
+    "key": "collaborations/frame-hero.png",
+    "contentType": "image/webp",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/frame-process-1.jpg.asset.json",
+    "srcPath": "public/__l5e/assets-v1/3ed863b8-7d3c-4024-ac9a-1f7a8bfc968c/frame-process-1.jpg",
+    "key": "collaborations/frame-process-1.jpg",
+    "contentType": "image/webp",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/frame-process-2.jpg.asset.json",
+    "srcPath": "public/__l5e/assets-v1/bd01d76d-f73d-428e-91f0-b748d4065407/frame-process-2.jpg",
+    "key": "collaborations/frame-process-2.jpg",
+    "contentType": "image/webp",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/frame-process-3.jpg.asset.json",
+    "srcPath": "public/__l5e/assets-v1/10232590-90cf-4eba-bc80-d834637e24b2/frame-process-3.jpg",
+    "key": "collaborations/frame-process-3.jpg",
+    "contentType": "image/webp",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/frame-work-1.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/9c7ab628-c760-4508-9f73-7b151b8dfe9a/frame-work-1.png",
+    "key": "works/frame-work-1.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/frame-work-2.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/4c5020f8-2c2b-480c-a277-e53500bbe75f/frame-work-2.png",
+    "key": "works/frame-work-2.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/frame-work-3.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/28b7bc91-a74f-4524-9b1f-6a9ff8cb3d8b/frame-work-3.png",
+    "key": "works/frame-work-3.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/hasher-painting.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/173bfaa4-0e3c-44f3-8547-0bfc8e218e65/hasher-painting.png",
+    "key": "collaborations/hasher-painting.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/home-hero-v2.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/a98c667b-f642-44cd-add5-f40c51ae0956/home-hero-v2.png",
+    "key": "home/home-hero-v-2.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/home-hero-v3.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/babe6641-fc48-4b0a-b01b-de28005cf6ac/home-hero-v3.png",
+    "key": "home/home-hero-v-3.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/home-hero-v4.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/363dcb5e-7b33-42d4-b785-66dfd9b7115c/home-hero-v4.png",
+    "key": "home/home-hero-v-4.png",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/home-hero.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/117a1939-e6c0-4d26-a1e6-a65a45704c1e/home-hero.png",
+    "key": "home/home-hero.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/home_header.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/59bf56f8-c3b1-49c2-a0bb-d051b1ab0919/home_header.png",
+    "key": "home/home-header.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/home_header_now.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/c2bebc0c-598b-4cc7-bb96-38c2a9a8bc2b/home_header_now.png",
+    "key": "home/home-header-now.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/nicky-myny-cv.pdf.asset.json",
+    "srcPath": "public/__l5e/assets-v1/3c0ef7f9-07cc-4332-aa06-a6a7b35ae03e/CV_NICKYMYNY_2026.pdf",
+    "key": "about/cv-nickymyny-2026.pdf",
+    "contentType": "application/pdf",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/nm-portrait.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/769a2d46-6d66-44d7-899c-2dfbf2d43309/nm-portrait.png",
+    "key": "about/nm-portrait.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/open-studio-table.jpg.asset.json",
+    "srcPath": "public/__l5e/assets-v1/d449d73f-0dd9-4eb8-bcf8-989b404a2c53/open-studio-table.jpg",
+    "key": "studio/open-studio-table.jpg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/open-studio.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/575003d3-51d1-426c-a685-ee48d57b1142/open-studio.png",
+    "key": "studio/open-studio.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/painting-reconnection-real.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/f81aa919-cc82-4db1-a984-f080353363e8/painting-reconnection-real.png",
+    "key": "home/painting-reconnection-real.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/painting-reconnection-v2.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/c8292f46-9b07-40e6-94ea-e51ecf59e7ef/painting-reconnection-v2.png",
+    "key": "home/painting-reconnection-v-2.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/painting-reconnection.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/b5bd9b52-9769-4cef-b61d-62e2a598ed65/painting-reconnection.png",
+    "key": "home/painting-reconnection.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/prev-commission-1.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/df01f9f2-a167-4652-b841-cd0d763d11ec/prev-commission-1.png",
+    "key": "collaborations/prev-commission-1.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/prev-commission-2.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/1ed7b07f-8ed6-42ca-accd-520d24264e50/prev-commission-2.png",
+    "key": "collaborations/prev-commission-2.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/prev-commission-3.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/62b732ca-3ee5-4b1e-b6ec-4c3c4ada0665/prev-commission-3.png",
+    "key": "collaborations/prev-commission-3.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/prev-commission-4.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/f74c0516-ccd8-4317-b7cc-c4c61152fc4d/prev-commission-4.png",
+    "key": "collaborations/prev-commission-4.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/private-commissions.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/2a647f7a-3ba9-4a03-b9d6-e1ae4b7f76a9/private-commissions.png",
+    "key": "collaborations/private-commissions.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/quote-bg.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/0c1a3895-226a-4410-82df-57269fcb4814/quote-bg.png",
+    "key": "home/quote-bg.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/rooting-in-remembrance-new.jpg.asset.json",
+    "srcPath": "public/__l5e/assets-v1/c5aa1ede-886e-4964-a4ec-b09e13cd04b7/rooting-in-remembrance-new.jpg",
+    "key": "works/rooting-in-remembrance-new.jpg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/sdg-tent.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/9e446ec6-d2fc-4c17-9faa-f5773326605f/sdg-tent.png",
+    "key": "collaborations/sdg-tent.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/studio-green-canvas.jpeg.asset.json",
+    "srcPath": "public/__l5e/assets-v1/01bb9b6b-7453-475f-8efd-31d270a28af7/studio-green-canvas.jpeg",
+    "key": "studio/studio-green-canvas.jpeg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/studio-header-home-bottom.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/192e6b77-1495-4105-9bbb-3126f33f9b35/studio-header-home-bottom.png",
+    "key": "studio/studio-header-home-bottom.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/studio-hero-header.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/3ed40d48-06c6-4e36-8a0e-d73961aae03a/studio-hero-header.png",
+    "key": "studio/studio-hero-header.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/studio-hero-mug.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/47b15569-fcd9-484d-8cd8-fcef4f232a54/studio-hero-mug.png",
+    "key": "studio/studio-hero-mug.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/studio-palette-table.jpg.asset.json",
+    "srcPath": "public/__l5e/assets-v1/c9329c20-447b-492b-845b-a052539ab175/studio-palette-table.jpg",
+    "key": "studio/studio-palette-table.jpg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/studio-sa-landscape.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/5d301df7-d74f-4cf0-a252-c57287e143b7/studio-sa-landscape.png",
+    "key": "studio/studio-sa-landscape.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/studio-stool-paintings.jpg.asset.json",
+    "srcPath": "public/__l5e/assets-v1/58c2869f-46c1-4093-8c35-7b39d3985e04/studio-stool-paintings.jpg",
+    "key": "studio/studio-stool-paintings.jpg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/studio-swing-chair.jpg.asset.json",
+    "srcPath": "public/__l5e/assets-v1/1e5cfef2-f7b8-4f9d-8741-cf4c59cfc4af/studio-swing-chair.jpg",
+    "key": "studio/studio-swing-chair.jpg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/swartland-7345.jpg.asset.json",
+    "srcPath": "public/__l5e/assets-v1/3ced0770-7186-44fa-9361-e4002c9d2ad9/swartland-7345.jpg",
+    "key": "collaborations/swartland-7345.jpg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/swartland-collection.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/9e5b84f6-ee7f-4e1e-bf8e-5777097fcfa5/swartland-collection.png",
+    "key": "collaborations/swartland-collection.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/swartland-winemakers.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/b3ba238b-ad7c-4f30-af29-7eaeabc395ba/swartland-winemakers.png",
+    "key": "collaborations/swartland-winemakers.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/the-emerald-dream.jpg.asset.json",
+    "srcPath": "public/__l5e/assets-v1/a2ec8569-4135-478f-8a21-71c6673ba347/the-emerald-dream.jpg",
+    "key": "works/the-emerald-dream.jpg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/thespaceinbetween.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/55807c87-464f-477c-9e97-d241acd46142/thespaceinbetween.png",
+    "key": "works/thespaceinbetween.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/this-place-alive.jpg.asset.json",
+    "srcPath": "public/__l5e/assets-v1/66e3343b-9ce0-46ab-80be-3f9fc52859f4/this-place-alive.jpg",
+    "key": "misc/this-place-alive.jpg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/wherewestand.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/6c562c3b-5820-4243-b72b-1e12d5f39202/wherewestand.png",
+    "key": "works/wherewestand.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/works-archive.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/5c2c0c45-e127-4d2f-8ff6-ee544fafc9e0/works-archive.png",
+    "key": "works/works-archive.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/works-top-1.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/14ac6f45-251e-4716-a3e2-043f4b0acc5c/works-top-1.png",
+    "key": "works/works-top-1.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/works-top-2.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/c2014f41-c8d7-4e8b-84c9-0d9c1f84f9e7/works-top-2.png",
+    "key": "works/works-top-2.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/works-top-3.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/38987caf-6a49-4f1d-8ca0-4cd5ac0e19ad/works-top-3.png",
+    "key": "works/works-top-3.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/zerocrete-johan-nicky.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/d9f69c3f-42d0-4a9e-af2c-7b92bea56272/zerocrete-johan-nicky.png",
+    "key": "works/zerocrete-johan-nicky.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/zerocrete-johan.jpg.asset.json",
+    "srcPath": "public/__l5e/assets-v1/8e1f9ea4-d1d3-4a05-a213-37c832bf3a5b/zerocrete-johan.jpg",
+    "key": "works/zerocrete-johan.jpg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "asset-json",
+    "jsonPath": "src/assets/zerocrete.png.asset.json",
+    "srcPath": "public/__l5e/assets-v1/57ab6abf-6c3f-4d12-9a8c-660a4af7e969/zerocrete.png",
+    "key": "works/zerocrete.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "local-import",
+    "srcPath": "src/assets/about-studio.jpg",
+    "key": "studio/about-studio.jpg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "local-import",
+    "srcPath": "src/assets/artwork-portrait-1.jpg",
+    "key": "works/artwork-portrait-1.jpg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "local-import",
+    "srcPath": "src/assets/artwork-portrait-2.jpg",
+    "key": "works/artwork-portrait-2.jpg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "local-import",
+    "srcPath": "src/assets/brush-detail.jpg",
+    "key": "studio/brush-detail.jpg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "local-import",
+    "srcPath": "src/assets/collaboration-landscape-1.jpg",
+    "key": "collaborations/collaboration-landscape-1.jpg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "local-import",
+    "srcPath": "src/assets/exhibitions/closing.jpg",
+    "key": "exhibitions/closing.jpg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "local-import",
+    "srcPath": "src/assets/exhibitions/daring-deities.jpg",
+    "key": "exhibitions/daring-deities.jpg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "local-import",
+    "srcPath": "src/assets/exhibitions/earth-sisters.jpg",
+    "key": "exhibitions/earth-sisters.jpg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "local-import",
+    "srcPath": "src/assets/exhibitions/gallery88.jpg",
+    "key": "exhibitions/gallery-88.jpg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "local-import",
+    "srcPath": "src/assets/exhibitions/hara-flux.jpg",
+    "key": "exhibitions/hara-flux.jpg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "local-import",
+    "srcPath": "src/assets/exhibitions/hero.jpg",
+    "key": "exhibitions/hero.jpg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "local-import",
+    "srcPath": "src/assets/exhibitions/solo-studios.png",
+    "key": "exhibitions/solo-studios.png",
+    "contentType": "image/png",
+    "exists": true
+  },
+  {
+    "type": "local-import",
+    "srcPath": "src/assets/exhibitions/spice-route.jpg",
+    "key": "exhibitions/spice-route.jpg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "local-import",
+    "srcPath": "src/assets/exhibitions/the-blessing.jpg",
+    "key": "exhibitions/the-blessing.jpg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "local-import",
+    "srcPath": "src/assets/nicky-hero.jpg",
+    "key": "about/nicky-hero.jpg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "local-import",
+    "srcPath": "src/assets/studio-table.jpg",
+    "key": "studio/studio-table.jpg",
+    "contentType": "image/jpeg",
+    "exists": true
+  },
+  {
+    "type": "public",
+    "srcPath": "public/og-home.jpg",
+    "key": "og/home.jpg",
+    "contentType": "image/jpeg",
+    "exists": true
+  }
+]

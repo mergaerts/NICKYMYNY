@@ -1,10 +1,4 @@
-import heroImage from "@/assets/nicky-hero.jpg";
-import studioTableImage from "@/assets/studio-table.jpg";
-import collaborationLandscapeImage from "@/assets/collaboration-landscape-1.jpg";
-import artworkPortraitOne from "@/assets/artwork-portrait-1.jpg";
-import artworkPortraitTwo from "@/assets/artwork-portrait-2.jpg";
-import aboutStudioImage from "@/assets/about-studio.jpg";
-import brushDetailImage from "@/assets/brush-detail.jpg";
+import { mediaUrl } from "@/lib/media";
 import daftImg from "@/assets/daft-nina-nicky.png.asset.json";
 import swartlandImg from "@/assets/swartland-collection.png.asset.json";
 import zerocreteJohanImg from "@/assets/zerocrete-johan-nicky.png.asset.json";
@@ -12,6 +6,17 @@ import hasherImg from "@/assets/hasher-painting.png.asset.json";
 import eoscImg from "@/assets/eosc-portrait.png.asset.json";
 import sdgTentImg from "@/assets/sdg-tent.png.asset.json";
 import rocheImg from "@/assets/commissions-hero.png.asset.json";
+
+/** Shape matches old next/image StaticImageData callers (`.src`). */
+const img = (key: string) => ({ src: mediaUrl(key) });
+
+const heroImage = img("about/nicky-hero.jpg");
+const studioTableImage = img("studio/studio-table.jpg");
+const collaborationLandscapeImage = img("collaborations/collaboration-landscape-1.jpg");
+const artworkPortraitOne = img("works/artwork-portrait-1.jpg");
+const artworkPortraitTwo = img("works/artwork-portrait-2.jpg");
+const aboutStudioImage = img("studio/about-studio.jpg");
+const brushDetailImage = img("studio/brush-detail.jpg");
 
 export interface CollaborationProject {
   slug: string;

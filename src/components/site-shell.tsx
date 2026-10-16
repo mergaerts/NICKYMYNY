@@ -45,12 +45,12 @@ export function SiteShell({ children }: { children: ReactNode }) {
         Skip to content
       </a>
       <header className="sticky top-0 z-40 border-b border-border/70 bg-background/92 backdrop-blur-md">
-        <div className="mx-auto flex w-full max-w-[1920px] items-center justify-between gap-6 px-5 py-4 md:px-8 lg:px-12">
+        <div className="mx-auto flex w-full max-w-[1920px] items-center justify-between gap-4 px-5 py-2.5 md:gap-6 md:px-8 md:py-4 lg:px-12">
           <Link href="/" className="min-w-0">
-            <div className="font-display text-[1.55rem] uppercase tracking-[0.24em] text-foreground sm:text-[1.75rem]">
+            <div className="font-display text-[1.2rem] uppercase tracking-[0.22em] text-foreground sm:text-[1.55rem] md:text-[1.75rem]">
               {siteMeta.name}
             </div>
-            <div className="mt-1 text-[0.7rem] uppercase tracking-[0.28em] text-muted-foreground">
+            <div className="mt-0.5 text-[0.62rem] uppercase tracking-[0.24em] text-muted-foreground sm:mt-1 sm:text-[0.7rem] sm:tracking-[0.28em]">
               {siteMeta.strapline}
             </div>
           </Link>
@@ -84,7 +84,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
               aria-label="Toggle navigation"
               aria-expanded={menuOpen}
               onClick={() => setMenuOpen((open) => !open)}
-              className="interactive inline-flex h-10 w-10 items-center justify-center rounded-sm border border-border bg-background text-foreground hover:bg-accent lg:hidden"
+              className="interactive inline-flex h-8 w-8 items-center justify-center rounded-sm border border-border bg-background text-foreground hover:bg-accent md:h-10 md:w-10 lg:hidden"
             >
               <Menu className="h-4 w-4" />
             </button>

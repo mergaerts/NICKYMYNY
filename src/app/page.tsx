@@ -4,23 +4,17 @@ import { ArrowRight } from "lucide-react";
 import { HeroScrollCue } from "@/components/hero-scroll-cue";
 import { MediaTextSection } from "@/components/media-text-section";
 import { btn } from "@/lib/button";
-import {
-  aboutStudioImage,
-  artworkPortraitOne,
-  artworkPortraitTwo,
-  collaborationLandscapeImage,
-  heroImage,
-  studioTableImage,
-} from "@/lib/site-data";
 import homeHero from "@/assets/home_header_now.png.asset.json";
 import paintingReconnection from "@/assets/painting-reconnection-real.png.asset.json";
 import privateCommissionsImg from "@/assets/private-commissions.png.asset.json";
 import frameExperienceImg from "@/assets/frame-experience.png.asset.json";
 import nmPortrait from "@/assets/nm-portrait.png.asset.json";
 import openStudio from "@/assets/open-studio-table.jpg.asset.json";
-import soloStudiosImg from "@/assets/exhibitions/solo-studios.png";
-import gallery88Img from "@/assets/exhibitions/gallery88.jpg";
+import { mediaUrl } from "@/lib/media";
 import { pageMetadata } from "@/lib/seo";
+
+const soloStudiosImg = mediaUrl("exhibitions/solo-studios.png");
+const gallery88Img = mediaUrl("exhibitions/gallery-88.jpg");
 
 export const metadata = pageMetadata({
   title: "Nicky Myny | Contemporary Painter",
@@ -38,7 +32,7 @@ export default function Index() {
       {/* HERO — fixed lg height so photo cannot inflate the row */}
       <section className="border-b border-border/70 bg-background">
         <div className="grid w-full grid-cols-1 lg:h-[clamp(34rem,72vh,52rem)] lg:grid-cols-[45fr_55fr]">
-          <div className="relative order-2 flex items-center bg-[#f5efe6] px-5 py-14 pb-24 md:px-8 md:py-16 md:pb-28 lg:order-1 lg:overflow-hidden lg:px-12 lg:py-16 lg:pb-24">
+          <div className="relative order-2 flex items-center bg-[#f5efe6] px-5 py-8 pb-16 md:px-8 md:py-16 md:pb-28 lg:order-1 lg:overflow-hidden lg:px-12 lg:py-16 lg:pb-24">
             <div className="max-w-[640px]">
               <p className="eyebrow">Contemporary Painter</p>
               <h1 className="section-title mt-5">
@@ -59,7 +53,7 @@ export default function Index() {
             </div>
             <HeroScrollCue targetId="upcoming" />
           </div>
-          <div className="relative order-1 h-48 w-full sm:h-60 md:h-72 lg:order-2 lg:h-auto lg:min-h-0">
+          <div className="relative order-1 h-36 w-full sm:h-52 md:h-72 lg:order-2 lg:h-auto lg:min-h-0">
             <img
               src={homeHero.url}
               alt="Nicky Myny painting in her studio"
@@ -99,7 +93,7 @@ export default function Index() {
                 venue: "Solo Studios",
                 place: "Riebeek Valley, South Africa",
                 date: "23-25 October 2026",
-                image: soloStudiosImg.src,
+                image: soloStudiosImg,
                 imageAlt: "Double portrait by Nicky Myny shown at Solo Studios",
                 imageHref:
                   "https://www.solostudios.co.za/artists-galleries-2026?pgid=mrxj7obd3-90861d66-b88f-4577-a4d1-4095c6e16fdf",
@@ -117,7 +111,7 @@ export default function Index() {
                 venue: "Gallery88",
                 place: "Paarl, South Africa",
                 date: "Opening 12 November 2026",
-                image: gallery88Img.src,
+                image: gallery88Img,
                 imageAlt: "Abstract painting in a light interior at Gallery88 Paarl",
                 imageHref: "https://www.gallery88.co.za/",
                 primary: {

@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import { mediaUrl } from "./media";
 import { absoluteUrl, SITE_URL } from "./site-utils";
 
-/** Default share preview = home hero (public/og-home.jpg). */
-export const DEFAULT_OG_IMAGE = absoluteUrl("/og-home.jpg");
+/** Default share preview = home hero on R2. */
+export const DEFAULT_OG_IMAGE = mediaUrl("og/home.jpg");
 
 type PageSeo = {
   title: string;

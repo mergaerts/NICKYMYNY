@@ -22,6 +22,9 @@
 .DS_Store
 *.pem
 
+# Media lives on R2 (nickymyny-media); do not re-mirror into deploy
+/public/__l5e/
+
 # debug
 npm-debug.log*
 yarn-debug.log*

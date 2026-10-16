@@ -20,11 +20,11 @@ export function HeroScrollCue({ targetId }: { targetId: string }) {
       onClick={() =>
         document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth", block: "start" })
       }
-      className={`interactive absolute bottom-8 left-1/2 z-10 -translate-x-1/2 text-foreground/60 hover:text-foreground md:bottom-10 ${
+      className={`interactive absolute bottom-4 left-1/2 z-10 -translate-x-1/2 text-foreground/60 hover:text-foreground md:bottom-10 ${
         visible ? "opacity-100" : "pointer-events-none opacity-0"
       }`}
     >
-      <ChevronDown className="scroll-cue-bounce h-10 w-10 md:h-11 md:w-11" strokeWidth={1.15} />
+      <ChevronDown className="scroll-cue-bounce h-8 w-8 md:h-11 md:w-11" strokeWidth={1.15} />
     </button>
   );
 }
