@@ -118,7 +118,7 @@ export default function Index() {
                 place: "Paarl, South Africa",
                 date: "Opening 12 November 2026",
                 image: gallery88Img.src,
-                imageAlt: "Brown and beige triptych at Gallery88 Paarl",
+                imageAlt: "Abstract painting in a light interior at Gallery88 Paarl",
                 imageHref: "https://www.gallery88.co.za/",
                 primary: {
                   label: "Visit Gallery88",

@@ -89,7 +89,7 @@ export const exhibitionsList: ExhibitionCard[] = [
     date: "5 – 28 April 2024",
     year: 2024,
     image: gallery88Image,
-    imageAlt: "Installation view at Gallery88 Paarl",
+    imageAlt: "Abstract painting in a light interior at Gallery88 Paarl",
     intro:
       "A solo presentation of recent paintings developed between the Belgian studio and the South African landscape.",
     about:
