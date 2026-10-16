@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName: "Nicky Myny",
     locale: "en_BE",
     type: "website",
-    title: "Nicky Myny | Contemporary Painter",
+    title: "Nicky Myny · Contemporary Painter",
     description:
       "Contemporary paintings, commissioned works, studio process, collaborations, and inquiry for Nicky Myny.",
     images: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nicky Myny | Contemporary Painter",
+    title: "Nicky Myny · Contemporary Painter",
     description:
       "Contemporary paintings, commissioned works, studio process, collaborations, and inquiry for Nicky Myny.",
     images: [DEFAULT_OG_IMAGE],

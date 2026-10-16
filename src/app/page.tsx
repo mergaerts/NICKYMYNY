@@ -27,7 +27,7 @@ export const metadata = pageMetadata({
   description:
     "Contemporary paintings, commissions, studio process, collaborations, and inquiry for Nicky Myny.",
   path: "/",
-  ogTitle: "Paintings that translate life into form.",
+  ogTitle: "Nicky Myny · Contemporary Painter",
   ogDescription:
     "Contemporary paintings and commissions shaped by memory, transition, presence, and connection.",
 });
