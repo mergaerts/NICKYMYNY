@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import { SiteShell } from "@/components/site-shell";
 import { JsonLd } from "@/lib/json-ld";
-import homeHero from "@/assets/home-hero.png.asset.json";
-import { absoluteUrl } from "@/lib/site-utils";
+import { DEFAULT_OG_IMAGE } from "@/lib/seo";
 import "./globals.css";
-
-const DEFAULT_OG_IMAGE = absoluteUrl(homeHero.url);
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://nickymyny.com"),
@@ -22,7 +19,14 @@ export const metadata: Metadata = {
     title: "Nicky Myny | Contemporary Painter",
     description:
       "Contemporary paintings, commissioned works, studio process, collaborations, and inquiry for Nicky Myny.",
-    images: [{ url: DEFAULT_OG_IMAGE }],
+    images: [
+      {
+        url: DEFAULT_OG_IMAGE,
+        width: 1200,
+        height: 630,
+        alt: "Nicky Myny painting in her studio",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",

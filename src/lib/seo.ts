@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
-import { SITE_URL } from "./site-utils";
+import { absoluteUrl, SITE_URL } from "./site-utils";
+
+/** Default share preview = home hero (public/og-home.jpg). */
+export const DEFAULT_OG_IMAGE = absoluteUrl("/og-home.jpg");
 
 type PageSeo = {
   title: string;
@@ -21,6 +24,7 @@ export function pageMetadata({
   const url = `${SITE_URL}${path === "/" ? "" : path}`;
   const ogDesc = ogDescription ?? description;
   const ogT = ogTitle ?? title;
+  const ogImage = image ? absoluteUrl(image) : DEFAULT_OG_IMAGE;
 
   return {
     title,
@@ -33,13 +37,20 @@ export function pageMetadata({
       siteName: "Nicky Myny",
       locale: "en_BE",
       type: "website",
-      ...(image ? { images: [{ url: image }] } : {}),
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: "Nicky Myny painting in her studio",
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: ogT,
       description: ogDesc,
-      ...(image ? { images: [image] } : {}),
+      images: [ogImage],
     },
   };
 }

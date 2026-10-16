@@ -27,7 +27,9 @@ export const metadata = pageMetadata({
   description:
     "Contemporary paintings, commissions, studio process, collaborations, and inquiry for Nicky Myny.",
   path: "/",
-  ogDescription: "Paintings and commissions that translate life transitions into form.",
+  ogTitle: "Paintings that translate life into form.",
+  ogDescription:
+    "Contemporary paintings and commissions shaped by memory, transition, presence, and connection.",
 });
 
 export default function Index() {
@@ -57,7 +59,7 @@ export default function Index() {
             </div>
             <HeroScrollCue targetId="upcoming" />
           </div>
-          <div className="relative order-1 h-64 w-full sm:h-80 md:h-[26rem] lg:order-2 lg:h-auto lg:min-h-0">
+          <div className="relative order-1 h-48 w-full sm:h-60 md:h-72 lg:order-2 lg:h-auto lg:min-h-0">
             <img
               src={homeHero.url}
               alt="Nicky Myny painting in her studio"
