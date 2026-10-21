@@ -42,6 +42,9 @@ export default function PrivacyPage() {
             <p className="mt-3">
               This website does not use tracking cookies, advertising pixels, or third-party analytics that identify individual visitors. Information you submit through the contact or newsletter forms is used only to respond to your inquiry or to send occasional studio news.
             </p>
+            <p className="mt-3">
+              If you join the collector list, your first name and email address are stored by the studio (on Cloudflare, with a backup copy in the studio&apos;s Google account) and used only for previews, new work releases and exhibition invitations. They are never shared or sold. To be removed, write to the address above.
+            </p>
           </div>
           <div>
             <h2 className="font-display text-[1.6rem] text-foreground md:text-[1.9rem]">Image copyright</h2>

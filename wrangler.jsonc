@@ -8,6 +8,16 @@
     "directory": ".open-next/assets",
     "binding": "ASSETS"
   },
+  // Collector list (/collect). Create with `wrangler d1 create nickymyny-collectors`
+  // and paste the database_id it prints. See docs/collector-list.md.
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "nickymyny-collectors",
+      "database_id": "REPLACE-WITH-DATABASE-ID",
+      "migrations_dir": "migrations"
+    }
+  ],
   "observability": {
     "enabled": true
   }
