@@ -12,7 +12,7 @@ came from.
 
 ## How it works
 
-- Visitors fill in first name and email, and can tick an invite checkbox for
+- Visitors fill in first name, last name, company (optional) and email, and can tick an invite checkbox for
   each upcoming event. Events live in `INVITE_EVENTS` in `src/lib/collect.ts`;
   each checkbox hides itself after its `until` date. **For a new expo, add one
   entry there.** Nothing else changes. With no upcoming events, the form simply

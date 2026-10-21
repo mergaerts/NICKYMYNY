@@ -9,7 +9,8 @@
 // Must match the SHEET_WEBHOOK_SECRET secret on Cloudflare.
 const SECRET = "PASTE-THE-SAME-SECRET-HERE";
 const SHEET_NAME = "Sign-ups";
-const HEADER = ["Date", "First name", "Email", "Event invites", "Source"];
+const HEADER = ["Date", "First name", "Last name", "Company", "Email", "Event invites", "Source"];
+const EMAIL_COLUMN = HEADER.indexOf("Email") + 1;
 
 function doPost(e) {
   const data = JSON.parse(e.postData.contents);
@@ -20,7 +21,7 @@ function doPost(e) {
   try {
     const sheet = getSheet();
     if (data.action === "delete") {
-      const emails = sheet.getRange(1, 3, sheet.getLastRow(), 1).getValues();
+      const emails = sheet.getRange(1, EMAIL_COLUMN, sheet.getLastRow(), 1).getValues();
       for (let i = emails.length - 1; i >= 1; i--) {
         if (String(emails[i][0]).toLowerCase() === data.email) sheet.deleteRow(i + 1);
       }
@@ -28,6 +29,8 @@ function doPost(e) {
       sheet.appendRow([
         new Date(data.createdAt),
         data.firstName,
+        data.lastName,
+        data.company,
         data.email,
         data.invites,
         data.source,
@@ -44,9 +47,10 @@ function getSheet() {
   let sheet = book.getSheetByName(SHEET_NAME);
   if (!sheet) {
     sheet = book.insertSheet(SHEET_NAME);
-    sheet.appendRow(HEADER);
     sheet.setFrozenRows(1);
   }
+  // Keep the header in step with the columns (e.g. after adding a field).
+  sheet.getRange(1, 1, 1, HEADER.length).setValues([HEADER]);
   return sheet;
 }
 

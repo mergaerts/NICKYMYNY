@@ -22,6 +22,9 @@ export type Signup = {
   id: number;
   created_at: string;
   first_name: string;
+  last_name: string;
+  /** "" if not given. */
+  company: string;
   email: string;
   /** "Event A; Event B", or "" if none. */
   invites: string;
@@ -50,18 +53,39 @@ export function cleanSource(value: unknown) {
 /** Sends a sign-up (or a deletion) to the Google Sheet. Never throws. */
 export async function mirrorToSheet(
   env: CloudflareEnv,
-  payload: { action: "add"; firstName: string; email: string; invites: string; source: string; createdAt: string } | { action: "delete"; email: string },
+  payload:
+    | {
+        action: "add";
+        firstName: string;
+        lastName: string;
+        company: string;
+        email: string;
+        invites: string;
+        source: string;
+        createdAt: string;
+      }
+    | { action: "delete"; email: string },
 ) {
-  if (!env.SHEET_WEBHOOK_URL || !env.SHEET_WEBHOOK_SECRET) return false;
+  if (!env.SHEET_WEBHOOK_URL || !env.SHEET_WEBHOOK_SECRET) {
+    console.error("collect: Sheet backup skipped, SHEET_WEBHOOK_URL or SHEET_WEBHOOK_SECRET not set");
+    return false;
+  }
   try {
     const res = await fetch(env.SHEET_WEBHOOK_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ ...payload, secret: env.SHEET_WEBHOOK_SECRET }),
     });
-    const data = (await res.json().catch(() => null)) as { ok?: boolean } | null;
+    const text = await res.text();
+    let data: { ok?: boolean } | null = null;
+    try {
+      data = JSON.parse(text);
+    } catch {}
+    // Logged (not shown to visitors) so `wrangler tail` / Workers logs explain failures.
+    if (!data?.ok) console.error(`collect: Sheet backup failed (HTTP ${res.status}): ${text.slice(0, 300)}`);
     return Boolean(data?.ok);
-  } catch {
+  } catch (error) {
+    console.error("collect: Sheet backup request failed", error);
     return false;
   }
 }
@@ -88,10 +112,18 @@ export async function isAdmin(env: CloudflareEnv, cookieValue: string | undefine
 
 // --- Export --------------------------------------------------------------
 
-const HEADER = ["Date", "First name", "Email", "Event invites", "Source"];
+const HEADER = ["Date", "First name", "Last name", "Company", "Email", "Event invites", "Source"];
 
 function rows(signups: Signup[]) {
-  return signups.map((s) => [s.created_at.replace("T", " ").slice(0, 16), s.first_name, s.email, s.invites, s.source]);
+  return signups.map((s) => [
+    s.created_at.replace("T", " ").slice(0, 16),
+    s.first_name,
+    s.last_name,
+    s.company,
+    s.email,
+    s.invites,
+    s.source,
+  ]);
 }
 
 /** Standard UTF-8 CSV (Google Sheets, mailing tools, anything else). */

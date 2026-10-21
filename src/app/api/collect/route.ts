@@ -11,9 +11,11 @@ export async function POST(request: Request) {
   if (body.website) return Response.json({ ok: true });
 
   const firstName = String(body.firstName ?? "").trim().slice(0, 100);
+  const lastName = String(body.lastName ?? "").trim().slice(0, 100);
+  const company = String(body.company ?? "").trim().slice(0, 150);
   const email = String(body.email ?? "").trim().toLowerCase().slice(0, 200);
-  if (!firstName || !EMAIL_RE.test(email)) {
-    return Response.json({ ok: false, error: "Please enter your first name and a valid email address." }, { status: 400 });
+  if (!firstName || !lastName || !EMAIL_RE.test(email)) {
+    return Response.json({ ok: false, error: "Please enter your first name, last name and a valid email address." }, { status: 400 });
   }
   // Only accept invites for events that are still open.
   const asked = Array.isArray(body.invites) ? body.invites.map(String) : [];
@@ -25,7 +27,7 @@ export async function POST(request: Request) {
 
   const env = collectEnv();
   // Start the Sheet backup right away so it runs even if D1 fails.
-  const sheet = mirrorToSheet(env, { action: "add", firstName, email, invites: invites.join("; "), source, createdAt });
+  const sheet = mirrorToSheet(env, { action: "add", firstName, lastName, company, email, invites: invites.join("; "), source, createdAt });
 
   try {
     // Signing up again keeps earlier invites and adds the new ones.
@@ -33,10 +35,11 @@ export async function POST(request: Request) {
     const merged = [...new Set([...splitInvites(existing.results[0]?.invites ?? ""), ...invites])].join("; ");
 
     await env.DB.prepare(
-      `INSERT INTO signups (created_at, first_name, email, invites, source) VALUES (?, ?, ?, ?, ?)
-       ON CONFLICT(email) DO UPDATE SET first_name = excluded.first_name, invites = excluded.invites`,
+      `INSERT INTO signups (created_at, first_name, last_name, company, email, invites, source) VALUES (?, ?, ?, ?, ?, ?, ?)
+       ON CONFLICT(email) DO UPDATE SET first_name = excluded.first_name, last_name = excluded.last_name,
+         company = CASE WHEN excluded.company <> '' THEN excluded.company ELSE company END, invites = excluded.invites`,
     )
-      .bind(createdAt, firstName, email, merged, source)
+      .bind(createdAt, firstName, lastName, company, email, merged, source)
       .run();
   } catch (error) {
     console.error("collect: D1 insert failed", error);

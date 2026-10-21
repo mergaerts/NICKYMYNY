@@ -75,11 +75,12 @@ export default async function CollectAdminPage({
       {deleted ? <p className="mt-6 text-sm text-primary">Removed.</p> : null}
 
       <div className="mt-10 overflow-x-auto border-t border-border/70">
-        <table className="w-full min-w-[640px] text-left text-sm">
+        <table className="w-full min-w-[760px] text-left text-sm">
           <thead>
             <tr className="border-b border-border/70 text-[0.7rem] uppercase tracking-[0.18em] text-muted-foreground">
               <th className="py-3 pr-4 font-normal">Date</th>
-              <th className="py-3 pr-4 font-normal">First name</th>
+              <th className="py-3 pr-4 font-normal">Name</th>
+              <th className="py-3 pr-4 font-normal">Company</th>
               <th className="py-3 pr-4 font-normal">Email</th>
               <th className="py-3 pr-4 font-normal">Event invites</th>
               <th className="py-3 pr-4 font-normal">Source</th>
@@ -90,7 +91,8 @@ export default async function CollectAdminPage({
             {results.map((s) => (
               <tr key={s.id} className="border-b border-border/70">
                 <td className="py-3 pr-4 whitespace-nowrap text-muted-foreground">{s.created_at.slice(0, 10)}</td>
-                <td className="py-3 pr-4 text-foreground">{s.first_name}</td>
+                <td className="py-3 pr-4 text-foreground">{`${s.first_name} ${s.last_name}`.trim()}</td>
+                <td className="py-3 pr-4 text-muted-foreground">{s.company}</td>
                 <td className="py-3 pr-4 text-foreground">
                   <a href={`mailto:${s.email}`} className="hover:text-primary">{s.email}</a>
                 </td>
@@ -103,7 +105,7 @@ export default async function CollectAdminPage({
             ))}
             {results.length === 0 ? (
               <tr>
-                <td colSpan={6} className="py-10 text-center text-muted-foreground">No sign-ups yet.</td>
+                <td colSpan={7}className="py-10 text-center text-muted-foreground">No sign-ups yet.</td>
               </tr>
             ) : null}
           </tbody>

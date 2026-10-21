@@ -22,6 +22,8 @@ export function CollectForm({ source, events }: { source: string; events: { name
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           firstName: fd.get("firstName"),
+          lastName: fd.get("lastName"),
+          company: fd.get("company"),
           email: fd.get("email"),
           invites: fd.getAll("invite"),
           website: fd.get("website"),
@@ -53,7 +55,11 @@ export function CollectForm({ source, events }: { source: string; events: { name
 
   return (
     <form className="mt-10 grid gap-5" onSubmit={handleSubmit}>
-      <input name="firstName" aria-label="First name" placeholder="First name" autoComplete="given-name" className={fieldClass} required />
+      <div className="grid gap-5 sm:grid-cols-2">
+        <input name="firstName" aria-label="First name" placeholder="First name" autoComplete="given-name" className={fieldClass} required />
+        <input name="lastName" aria-label="Last name" placeholder="Last name" autoComplete="family-name" className={fieldClass} required />
+      </div>
+      <input name="company" aria-label="Company (optional)" placeholder="Company (optional)" autoComplete="organization" className={fieldClass} />
       <input name="email" type="email" aria-label="Email" placeholder="Email" autoComplete="email" className={fieldClass} required />
       {/* Honeypot, hidden from people */}
       <input name="website" tabIndex={-1} autoComplete="off" aria-hidden className="hidden" />
