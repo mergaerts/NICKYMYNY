@@ -1,24 +1,33 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "nickymyny",
-  "main": ".open-next/worker.js",
-  "compatibility_date": "2026-07-23",
-  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
-  "assets": {
-    "directory": ".open-next/assets",
-    "binding": "ASSETS"
-  },
-  // Collector list (/collect). Create with `wrangler d1 create nickymyny-collectors`
-  // and paste the database_id it prints. See docs/collector-list.md.
-  "d1_databases": [
-    {
-      "binding": "DB",
-      "database_name": "nickymyny-collectors",
-      "database_id": "REPLACE-WITH-DATABASE-ID",
-      "migrations_dir": "migrations"
-    }
-  ],
-  "observability": {
-    "enabled": true
-  }
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "nickymyny",
+	"main": ".open-next/worker.js",
+	"compatibility_date": "2026-07-23",
+	"compatibility_flags": [
+		"nodejs_compat",
+		"global_fetch_strictly_public"
+	],
+	"assets": {
+		"directory": ".open-next/assets",
+		"binding": "ASSETS"
+	},
+	// Collector list (/collect). Create with `wrangler d1 create nickymyny-collectors`
+	// and paste the database_id it prints. See docs/collector-list.md.
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "nickymyny-collectors",
+			"database_id": "REPLACE-WITH-DATABASE-ID",
+			"migrations_dir": "migrations"
+		},
+		{
+			"binding": "nickymyny_collectors",
+			"database_name": "nickymyny-collectors",
+			"database_id": "28b2dbed-446a-477d-9950-4940358c7ec8",
+			"remote": true
+		}
+	],
+	"observability": {
+		"enabled": true
+	}
 }
