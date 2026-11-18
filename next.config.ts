@@ -3,7 +3,15 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   async redirects() {
     return [
-      // Apex canonical — avoid www duplicate in Google
+      // Apex canonical — avoid www duplicate in Google.
+      // Root needs its own rule: on OpenNext, "/:path*" with an empty path
+      // redirects to the literal "https://nickymyny.com/:path*".
+      {
+        source: "/",
+        has: [{ type: "host", value: "www.nickymyny.com" }],
+        destination: "https://nickymyny.com/",
+        permanent: true,
+      },
       {
         source: "/:path*",
         has: [{ type: "host", value: "www.nickymyny.com" }],
